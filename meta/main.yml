@@ -1,3 +1,4 @@
+---
 galaxy_info:
   role_name: msmtp_mailer
   author: poppen
@@ -5,19 +6,19 @@ galaxy_info:
   min_ansible_version: '2.4'
   license: Apache
   platforms:
-  - name: Debian
-    versions:
-      - buster
-      - bullseye
-  - name: Ubuntu
-    versions:
-      - bionic
-      - focal
-      - jammy
-  - name: Alpine
-    versions:
-    - all
+    - name: Debian
+      versions:
+        - buster
+        - bullseye
+    - name: Ubuntu
+      versions:
+        - bionic
+        - focal
+        - jammy
+    - name: Alpine
+      versions:
+        - all
   galaxy_tags:
-  - mail
-  - system
-  - networking
+    - mail
+    - system
+    - networking
