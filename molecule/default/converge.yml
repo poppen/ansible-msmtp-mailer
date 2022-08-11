@@ -1,0 +1,8 @@
+---
+- name: Converge
+  hosts: all
+  gather_facts: false
+  tasks:
+    - name: "Include poppen.msmtp_mailer"
+      ansible.builtin.include_role:
+        name: "poppen.msmtp_mailer"
