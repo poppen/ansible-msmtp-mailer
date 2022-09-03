@@ -29,7 +29,7 @@
       - msmtp-mta
       - bsd-mailx
   tags: mail
-  notify: test mail
+  notify: Test mail
   when: ansible_facts['os_family'] == "Debian"
 
 - name: Install msmtp and s-nail on Archlinux.
@@ -69,7 +69,7 @@
     group: "{{ msmtprc_group }}"
     mode: "{{ msmtprc_mode }}"
   tags: mail
-  notify: test mail
+  notify: Test mail
 
 - name: Copy aliases conf file.
   ansible.builtin.template:
@@ -79,4 +79,4 @@
     group: root
     mode: 0644
   tags: mail
-  notify: test mail
+  notify: Test mail
