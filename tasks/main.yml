@@ -33,7 +33,7 @@
   when: ansible_facts['os_family'] == "Debian"
 
 - name: Install msmtp and s-nail on Archlinux.
-  ansible.builtin.pacman:
+  community.general.packaging.os.pacman:
     name: "{{ packages }}"
     state: present
   vars:
@@ -44,7 +44,7 @@
   when: ansible_facts['os_family'] == "Archlinux"
 
 - name: Install msmtp and mailx on Alpine.
-  ansible.builtin.apk:
+  community.general.packaging.os.apk:
     name: "{{ packages }}"
     state: present
     update_cache: false
